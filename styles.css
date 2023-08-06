@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    font-family: "Exo 2", sans-serif;
+    background-color: #222; /* Dark gray background color */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    display: flex;
+    flex-direction: column; /* Make sure the content is displayed in a column */
+}
+
+.main-title {
+    font-family: "Orbitron", sans-serif;
+    text-align: center; /* Center the main title */
+    margin-top: 100px; /* Add some top margin for spacing */
+}
+
+a {
+    font-family: "VT323", monospace;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Center the links horizontally */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 24px; /* Reduce the font size for smaller screens */
+    }
+
+    a {
+        padding: 6px 12px; /* Adjust padding for smaller links */
+    }
+}
+
+.content {
+    padding: 20px; /* Add padding around the content */
+    margin: 20px; /* Add margin for spacing from other elements */
+}
+
+.content p {
+	font-family: "Inconsolata", monospace;
+	font-size: 18px;
+	line-heightL 1.5;
+	margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    margin-top: auto; /* Push the footer to the bottom */
+}
